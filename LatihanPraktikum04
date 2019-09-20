@@ -1,0 +1,25 @@
+
+package latihanarray;
+
+import java.util.Scanner;
+
+public class Latihan04 {
+    
+    public static void main(String[] args) {
+        System.out.println("Mencari jumlah huruf a pada nama");
+        Scanner ketik = new Scanner(System.in);
+        String golek;
+        System.out.print("Masukan nama anda : ");
+        golek = ketik.nextLine();
+        
+        int a = 0;
+        for (int i = 0; i < golek.length(); i++) {
+            if (golek.charAt(i) == 'a'){
+                a++;
+                
+            }
+            
+        }
+        System.out.println("Jumlah huruf a pada nama anda adalah  : " + a);
+    }
+}
