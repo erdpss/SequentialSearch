@@ -1,0 +1,42 @@
+
+package TugasPraktikum;
+
+import java.util.Scanner;
+
+public class Tugas04 {
+    public static void main(String[] args) {
+        int a,b,c,d,e;
+        a = 0;
+        b = 0;
+        c = 0;
+        d = 0;
+        e = 0;
+        String oek,ok = new String();
+        
+        Scanner y = new Scanner(System.in);
+        System.out.print("Masukan kata/ Kalimat : ");
+        ok = y.nextLine();
+        
+        char r[] = new char [ok.length()];
+        oek = ok.toLowerCase();
+        
+        for (int i = 0; i < ok.length(); i++) {
+            if (oek.charAt(i) == 'a'){
+                a++;
+            }if (oek.charAt(i) == 'i'){
+                b++;
+            }if (oek.charAt(i) == 'u'){
+                c++;
+            }if (oek.charAt(i) == 'e'){
+                d++;
+            }if (oek.charAt(i) == 'o'){
+                e++;
+            }
+        }
+        System.out.println("a : " +a);
+        System.out.println("i : " +b);
+        System.out.println("u : " +c);
+        System.out.println("e : " +d);
+        System.out.println("o : " +e);
+    }
+}
