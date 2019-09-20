@@ -1,0 +1,30 @@
+package latihanarray;
+
+import java.util.Scanner;
+
+public class Latihan01 {
+
+    public static void main(String[] args) {
+        String cari;
+        boolean found = false;
+        String[] nama = new String[]{"rama", "dharma", "putra", "sutanto"};
+
+        Scanner ketik = new Scanner(System.in);
+        System.out.print("Masukan data yg ingin dicari : ");
+        cari = ketik.nextLine();
+
+        for (String nama1 : nama) {
+            if (cari.equals(nama1)) {
+                found = true;
+                break;
+            }
+
+        }
+
+        if (found == true) {
+            System.out.println("DATA DITEMUKAN !!");
+        } else {
+            System.out.println("DATA TIDAK DITEMUKAN !!");
+        }
+    }
+}
