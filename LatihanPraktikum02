@@ -1,0 +1,28 @@
+
+package latihanarray;
+
+import java.util.Scanner;
+
+public class Latihan02 {
+    
+    public static void main(String[] args) {
+        int golek;
+        boolean itu = false;
+        int[] nomor = new int[]{8,90,56,90,87,76,42};
+        
+        Scanner ketik = new Scanner(System.in);
+        System.out.print("Masukan data yang ingin dicari : ");
+        golek = ketik.nextInt();
+        
+        for (int i = 0; i < nomor.length; i++) {
+            if(golek == nomor[i]){
+                itu = true;
+                System.out.println("Data ditemukan pada indeks ke-" + i);
+            }
+        }
+        
+        if (itu != true){
+            System.out.println("Data tidak ditemukan");
+        }
+    }
+}
