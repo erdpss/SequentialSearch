@@ -1,0 +1,19 @@
+
+package latihanarray;
+
+public class Latihan03 {
+    
+    public static void main(String[] args) {
+        int kurang = 0;
+        int[] angka = new int []{-20,80,82,123,-83,890};
+        System.out.println("Data pada array : ");
+        for (int i = 0; i < angka.length; i++) {
+            System.out.print(angka[i]  + "\t");
+            if (angka[i] > kurang){
+                kurang = angka[i];
+            }
+            
+        }
+        System.out.println("\n Data terbesar dari array adalah : " + kurang);
+    }
+}
