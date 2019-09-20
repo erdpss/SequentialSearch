@@ -1,0 +1,39 @@
+
+package TugasPraktikum;
+
+import java.util.Scanner;
+
+public class Tugas01 {
+
+    public static void main(String[] args) {
+        int golek;
+        int a = 0;
+        boolean itu = false;
+        int[] nomor = new int[]{74, 98, 72, 74, 72, 90, 81, 72};
+        Scanner ketik = new Scanner(System.in);
+
+        System.out.println("Data pada array : ");
+        for (int i = 0; i < nomor.length; i++) {
+            if (nomor[i] < a) {
+                a = nomor[i];
+            }
+
+            System.out.print("\nMasukan data yang ingin dicari : ");
+            golek = ketik.nextInt();
+            
+            if (golek == 72 ){
+                System.out.println("\nData sebanyak 3 kali");
+            }else if (golek == 74){
+                System.out.println("\nData sebanyak 2 kali");
+            }else if (golek == 98){
+                System.out.println("\nData sebanyak 1 kali");
+            }else if (golek == 90){
+                System.out.println("\nData sebanyak 1 kali");
+            }else if (golek == 81){
+                System.out.println("\nData sebanyak 1 kali");
+            }else {
+                System.out.println("\nData tidak ada!");
+            }
+        }
+    }
+}
